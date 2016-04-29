@@ -3,12 +3,28 @@
         <div class="container-inner">
             <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
             <div class="credit">
-                <h1 class="logo-wrap">
-                    <a href="<%- url_for() %>" class="logo"></a>
-                </h1>
-                <p>&copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %></p>
-                <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a></p>
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- Primera página - 1 (www.laredsemanario.com) -->
+                <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-4967243132865960"
+                data-ad-slot="4621813528"
+                data-ad-format="auto"></ins>
+                <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+                <p>&copy; 2014 - <%= date(new Date(), 'YYYY') %> <%= config.title %></p>
+
             </div>
         </div>
+        <script type="application/ld+json">
+          {
+            "@context" : "http://schema.org",
+            "@type" : "WebSite",
+            "name" : "La Red Semanario",
+            "alternateName" : "La Red",
+            "url" : "https://www.laredsemanario.com"
+          }
+          </script>
     </div>
 </footer>

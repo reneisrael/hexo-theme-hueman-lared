@@ -1,17 +1,29 @@
 <article id="<%= post.layout %>-<%= post.slug %>" class="article article-single article-type-<%= post.layout %>" itemscope itemprop="blogPost">
-    <div class="article-inner">
         <% if (post.link || post.title) { %>
-            <header class="article-header">
+            <header class="article-header" itemprop="headline">
                 <%- partial('post/title', { class_name: 'article-title' }) %>
             </header>
         <% } %>
-        <div class="article-subtitle">
+        <div class="article-subtitle" itemprop="description">
             <%- partial('post/date', { class_name: 'article-date', date_format: null }) %>
             <%- partial('post/tag') %>
         </div>
         <div class="article-entry" itemprop="articleBody">
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- articulos -->
+            <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-4967243132865960"
+             data-ad-slot="5586146720"
+             data-ad-format="auto"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+            
             <%- post.content %>
-        </div>
+            <h6 itemprop="author" itemscope itemtype="https://schema.org/Person">
+              <span itemprop="name">La Red Semanario</span>
+            </h6>
         <footer class="article-footer">
             <%- partial('share/index', { post: post }) %>
         </footer>
